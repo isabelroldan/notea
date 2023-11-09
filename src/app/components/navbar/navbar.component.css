@@ -1,0 +1,45 @@
+/* styles.css */
+
+/* Estilos del contenedor del sidebar */
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 10px;
+  }
+  
+  /* Estilos del encabezado del sidebar */
+  .sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de la lista de enlaces en el sidebar */
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilos de los enlaces en la lista */
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para los íconos en los enlaces */
+  .sidebar-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para la imagen del usuario */
+  .user-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  

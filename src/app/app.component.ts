@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'holamundo';
+
+  public alerta(){
+    alert("Alerta Roja");
+    }
 }

@@ -1,0 +1,37 @@
+/*.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}*/
+
+html, body {
+    height: 100%;
+    margin: 0; /* Asegura que no haya márgenes que afecten el 100% */
+  }
+
+  .image-container img {
+    max-height: 80vh;
+    max-width: 80vh;
+    width: 100%;
+    height: auto;
+  }
