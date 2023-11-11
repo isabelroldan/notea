@@ -2,6 +2,7 @@ import { Component, ElementRef, OnInit, Input, Output, EventEmitter, OnChanges, 
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { INote } from 'src/app/model/INote';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-form-note',
@@ -13,13 +14,14 @@ import { INote } from 'src/app/model/INote';
 export class FormNoteComponent implements OnInit, OnChanges {
 
   @Input() note!: INote;
-  @Output() onsubmit = new EventEmitter<INote>();
+  @Output() onSubmit = new EventEmitter<INote>();
 
   public form: FormGroup;
+  private user = this.loginService.user;
   /*@ViewChild('title') title!:ElementRef;
   public description!:string;*/
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private loginService:LoginService) {
     this.form = this.fb.group({
       title: ['', [Validators.required, Validators.minLength(4)]],
       description: [''],
@@ -49,9 +51,12 @@ export class FormNoteComponent implements OnInit, OnChanges {
     let newNote: INote = {
       id: this.form.value.id,// <<-- new
       title: this.form.value.title,
-      description: this.form.value.description
+      description: this.form.value.description,
+      userId: this.user.id
     }
-    this.onsubmit.emit(newNote);
+    console.log(newNote);
+    
+    this.onSubmit.emit(newNote);
     //this.form.reset();
   }
 }

@@ -10,7 +10,8 @@ export class NoteComponent implements OnInit {
   @Input('note') public note: INote = {
     id:-1,
     title:'',
-    description:''
+    description:'',
+    userId:''
   };
 
   @Output() editNote = new EventEmitter<INote>();

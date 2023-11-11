@@ -15,7 +15,7 @@ export class LoginGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> |
     Promise<boolean | UrlTree> | boolean | UrlTree {
     //emulating a loggin system -> fake data
-   /* let mockLogin = this.loginS.isAuth();
+   let mockLogin = this.loginS.isAuth();
     let result = false;
     if (!mockLogin) {
       //Not Logged
@@ -35,7 +35,7 @@ export class LoginGuard implements CanActivate {
         result = true;
       }
     }
-    return result;*/
-    return true;
+    return result;
+   /* return true;*/
   }
 }

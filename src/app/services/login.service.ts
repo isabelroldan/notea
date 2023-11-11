@@ -12,12 +12,12 @@ export class LoginService {
   originalPath!:string;
 
 
-  constructor(private authService: SocialAuthService,
+  constructor(public authService: SocialAuthService,
     private router:Router) { 
       this.authService.authState.subscribe((user) => {
         this.user = user;
         this.loggedIn = (user != null);
-   
+        console.log(user);
         if(this.loggedIn){
           if(this.originalPath){
             this.router.navigate([this.originalPath]);
@@ -30,16 +30,16 @@ export class LoginService {
         }
       });
     }
+
   isAuth():boolean{
     return this.loggedIn;
   }
+
   async refreshToken(): Promise<void> {
     return this.authService.refreshAuthToken(GoogleLoginProvider.PROVIDER_ID);
   }
-  /*
-  async signInWithGoogle():Promise<SocialUser>{
-    return this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
-  }*/
+
+
   async signOut(): Promise<void> {
     return await this.authService.signOut();
   }
