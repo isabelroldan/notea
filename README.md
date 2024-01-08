@@ -1,27 +1,33 @@
-# Holamundo
+# Notas Privadas con Angular y Autenticación de Google
+¡Bienvenido al repositorio de la aplicación de notas desarrollada en Angular, donde la privacidad es la prioridad! Esta aplicación utiliza la autenticación de Google para garantizar que cada usuario tenga sus notas privadas. Además, ha sido desplegada en Firebase para una experiencia accesible y segura.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+## Características Clave
+### Autenticación de Google
+Cada usuario tiene acceso solo a sus propias notas gracias a la autenticación de Google. La privacidad y la seguridad son elementos fundamentales de esta aplicación.
+### Menú Lateral
+#### Inicio: Visualiza todas tus notas almacenadas de manera centralizada.
+#### Crear Nota: Añade nuevas notas con un enfoque simple, incluyendo un título y una descripción.
+#### Acerca de: Descubre más sobre la creadora de la aplicación, con una frase inspiradora y una imagen que cambia con cada recarga de página.
+#### Información de Usuario y Desconexión
+Visualiza con qué usuario has iniciado sesión y desconéctate fácilmente para garantizar la seguridad de tus datos.
+## Despliegue
+La aplicación está desplegada en Firebase, lo que garantiza un acceso fácil y seguro desde cualquier lugar.
 
-## Development server
+¡Explora la Aplicación!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Estructura del Proyecto
+La estructura del proyecto está organizada de manera clara para facilitar la comprensión y el desarrollo continuo.
 
-## Code scaffolding
+> [!NOTE]
+> Privacidad Garantizada: La aplicación ha sido diseñada con un enfoque claro en la privacidad del usuario, asegurando que cada persona tenga acceso solo a sus propias notas.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> [!CAUTION]
+> Desconexión Segura: Asegúrate de desconectarte después de usar la aplicación para garantizar la seguridad de tu información.
 
-## Build
+Contribuciones y Feedback
+¡Contribuciones y comentarios son bienvenidos! Si tienes sugerencias para mejorar la funcionalidad o encuentras problemas, no dudes en abrir un issue o enviar un pull request.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+> [!TIP]
+> Feedback Valioso: Tu feedback es crucial para mejorar la aplicación y brindar la mejor experiencia posible a los usuarios.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+¡Gracias por explorar la aplicación de notas privadas con Angular y autenticación de Google! Esperamos que disfrutes de una experiencia segura y eficiente al gestionar tus notas personales.
