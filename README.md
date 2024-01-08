@@ -24,6 +24,9 @@ La estructura del proyecto está organizada de manera clara para facilitar la co
 > [!CAUTION]
 > Desconexión Segura: Asegúrate de desconectarte después de usar la aplicación para garantizar la seguridad de tu información.
 
+## Despliegue
+[Despliegue PWA en Firebase](https://notea-85489.web.app)
+
 Contribuciones y Feedback
 ¡Contribuciones y comentarios son bienvenidos! Si tienes sugerencias para mejorar la funcionalidad o encuentras problemas, no dudes en abrir un issue o enviar un pull request.
 
